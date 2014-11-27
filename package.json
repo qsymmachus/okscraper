@@ -1,11 +1,13 @@
 {
-  "name"         : "okscraper",
-  "version"      : "0.0.1",
-  "description"  : "Simple OkCupid scraper.",
-  "main"         : "server.js",
-  "author"       : "@qsymmachus",
-  "dependencies" : {
-    "request"    : "latest",
-    "cheerio"    : "latest"
+  "name": "okscraper",
+  "version": "0.0.1",
+  "description": "Simple OkCupid scraper.",
+  "main": "server.js",
+  "author": "@qsymmachus",
+  "dependencies": {
+    "cheerio": "latest",
+    "request": "latest",
+    "single-line-log": "^0.4.1",
+    "sleep": "^1.1.8"
   }
 }
