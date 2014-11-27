@@ -36,7 +36,7 @@ var uscraper = {
     for (var i = 1; i <= requests; i++) {
       console.log("Pausing before request number " + i.toString() + "...");
       sleep.sleep(2);
-      this.get(100, outputPath);
+      this.get(numPerRequest, outputPath);
       console.log("SCRAPED " + (i * numPerRequest).toString() + " USERNAMES")
     }
     console.log("---")
