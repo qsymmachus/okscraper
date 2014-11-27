@@ -3,6 +3,12 @@ OkCupid Scraper
 
 Some handy tools for scraping OkCupid, written with Node.
 
+Install the dependencies first:
+
+```shell
+$ npm install
+```
+
 ##uscraper
 
 Scrapes OkCupid usernames and dumps them in a file. 
