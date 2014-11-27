@@ -31,13 +31,13 @@ var uscraper = {
     })
   },
 
-  // Appends 100 usernames to file specified in 'outputPath' 'num' times
-  batch: function(num, outputPath) {
-    for (var i = 1; i <= num; i++) {
+  // Appends 'numPerRequest' usernames to file specified in 'outputPath' 'requests' times
+  batch: function(numPerRequest, requests, outputPath) {
+    for (var i = 1; i <= requests; i++) {
       console.log("Pausing before request number " + i.toString() + "...");
       sleep.sleep(2);
       this.get(100, outputPath);
-      console.log("SCRAPED " + (i * 100).toString() + " USERNAMES")
+      console.log("SCRAPED " + (i * numPerRequest).toString() + " USERNAMES")
     }
     console.log("---")
   }
@@ -45,4 +45,4 @@ var uscraper = {
 
 //======================
 module.exports = uscraper
-uscraper.batch(process.argv[2], process.argv[3]);
+uscraper.batch(process.argv[2], process.argv[3], process.argv[4]);
