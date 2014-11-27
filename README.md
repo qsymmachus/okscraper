@@ -3,7 +3,7 @@ OkCupid Scraper
 
 Some handy tools for scraping OkCupid, written with Node.
 
-##uscraper.js
+##uscraper
 
 Scrapes OkCupid usernames and dumps them in a file. 
 
@@ -19,6 +19,6 @@ uscraper.batch(5, ~/docs/five_hundred_usernames.txt)
 
 You can also run uscraper directly from the shell. By default this will run `batch` with the arguments you pass.
 
-```
+```shell
 $ node uscraper.js 5 ~/docs/five_hundred_usernames.txt
 ```
