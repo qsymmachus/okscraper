@@ -9,7 +9,7 @@ var uscraper = {
   get: function(num, outputPath) {
     var matchesUrl = "https://www.okcupid.com/match?filter1=0,48&filter2=2,18,99&filter3=1,1&locid=0&timekey=1&fromWhoOnline=0&mygender=&update_prefs=1&sort_type=0&sa=1&count=" + num.toString();
 
-    request(matchesUrl, function(error, response, html) {
+    request({ url: matchesUrl, rejectUnauthorized : false }, function(error, response, html) {
       if (error) {
         console.log("Aw snap, something broke:");
         console.log(error.toString());
