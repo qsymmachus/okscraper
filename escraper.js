@@ -14,7 +14,7 @@ var escraper = (function() {
   }
 
   function sanitize(essay) {
-    return essay.replace(/^\s+|\s+$/g, "");
+    return essay.replace(/^\s+/g, "");
   }
 
   function parseProfile(body, username, outputPath) {
