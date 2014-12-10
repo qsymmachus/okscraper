@@ -4,6 +4,7 @@ var request = require('request');
 var sleep = require('sleep');
 var log = require('single-line-log').stdout;
 var escraper = require('./escraper');
+var async = require('async');
 
 var okscraper = (function() {
   function sanitize(essay) {
@@ -19,8 +20,10 @@ var okscraper = (function() {
         usernames = data.toString().split('\n');
         for (index in usernames) {
           username = sanitize(usernames[index])
+          sleep.sleep(1);
           escraper.get(username, outputPath);
-          sleep.sleep(2);
+          log("SCRAPED USER " + (index).toString() + ": " + username);
+          sleep.sleep(1);
         }
       })
     }

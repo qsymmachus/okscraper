@@ -5,6 +5,7 @@
   "main": "server.js",
   "author": "@qsymmachus",
   "dependencies": {
+    "async": "^0.9.0",
     "cheerio": "latest",
     "request": "latest",
     "single-line-log": "^0.4.1",
