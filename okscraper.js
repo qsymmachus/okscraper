@@ -4,7 +4,6 @@ var request = require('request');
 var sleep = require('sleep');
 var log = require('single-line-log').stdout;
 var escraper = require('./escraper');
-var async = require('async');
 
 var okscraper = (function() {
   function sanitize(essay) {
